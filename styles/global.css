@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+  /* Color */
+  --ct-primary: #FFFFFF;
+  --ct-secondary: #98959D;
+  --ct-tertiary: #666666;
+  --ct-brand: #9282FA;
+
+  /* BG color */
+  --bg-primary: #151515;
+  --bg-secondary: #1E1E1E;
+  --bg-tertiary: #23242C;
+  --bg-brand: #9282FA;
+  --bg-highlight: #BDB4FA;
+
+  /* Border Color */
+  --bd-primary: #3E3C41;
+  --bd-secondary: #86818C;
+  --bd-brand: #9282FA;
+  --bd-divisor: #353339;
+
+  /* Accent Color */
+  --ac-blue: #027DF0;
+  --ac-blue-light: #16487A;
+  --ac-yellow: #F0DC02;
+  --ac-yellow-light: #756E1B;
+  --ac-orange: #F09102;
+  --ac-orange-light: #75501B;
+
+  /* Font Family */
+  --ff-Inter-tight: 'Inter Tight', sans-serif;
+  --ff-Inter: 'Inter', sans-serif;
+
+  /* Font  */
+  --tt: 700 1.5rem/2rem var(--ff-Inter-tight);
+
+  --pg-medium: 500 0.875rem/1.5rem var(--ff-Inter);
+  --pg-small: 500 0.75rem/1rem var(--ff-Inter);
+  --lb-large: 700 1rem/1.5rem var(--ff-Inter);
+  --lb-medium: 700 0.875rem/1.5rem var(--ff-Inter);
+  --lb-small: 700 0.75rem/1rem var(--ff-Inter);
+  --lb-link: 500  0.75rem/1rem var(--ff-Inter);
+}
