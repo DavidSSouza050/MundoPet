@@ -1,0 +1,18 @@
+main {
+  max-width: 55rem;
+  min-height: 10rem;
+  height: auto;
+  overflow: hidden;
+
+  padding-inline: var(--px);
+  padding-top: 5rem;
+
+
+}
+
+@media (width <= 40em){
+  main{
+    padding-bottom: 2.75rem;
+  }
+  
+}

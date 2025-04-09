@@ -6,10 +6,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo Pet</title>
+  <link rel="icon" href="./assets/icons/dog.svg" type="image/svg">
   <link rel="stylesheet" href="./styles/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,700;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <img src="./assets/logo.svg" alt="Logo Mundo Pet" class="logo">
+
+  <main class="center">
+    <header>
+      <div>
+        <h1>Sua agenda</h1>
+        <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+      </div>
+      <div class="input">
+        <i><img src="./assets/icons/calendar.svg" alt="ícone de calendário"></i>
+        <input type="date" id="date" name="date">
+      </div>
+    </header>
+
+    <section class="schedule-period">
+      <header>
+        <div>
+          <img src="./assets/icons/morning.svg" alt="Manhã">
+          <h2>Manhã</h2>
+        </div>
+        <strong>09h-12h</strong>
+      </header>
+
+      <ul id="morning-period" class="period">
+        <li>
+          <div>
+            <strong>09:00</strong>
+            <span class="pet-name">Thor</span>/<span class="tutor-name">Fernanda Costa</span>
+          </div>
+          
+          <p class="service">Vacinação</p>
+
+          <p class="cancel">Remover agendamento</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="schedule-period">
+      <header>
+        <div>
+          <img src="./assets/icons/afternoon.svg" alt="Manhã">
+          <h2>Tarde</h2>
+        </div>
+        <strong>13h-18h</strong>
+      </header>
+
+      <ul id="morning-period" class="period">
+        <li>
+          <div>
+            <strong>13:00</strong>
+            <span class="pet-name">Mel</span>/<span class="tutor-name">João Souza</span>
+          </div>
+          
+          <p class="service">Corte de Unhas</p>
+
+          <p class="cancel">Remover agendamento</p>
+        </li>
+
+        <li>
+          <div>
+            <strong>14:00</strong>
+            <span class="pet-name">Bella</span>/<span class="tutor-name">Pedro Martins</span>
+          </div>
+          
+          <p class="service">Aplicação de Anti-pulgas</p>
+
+          <p class="cancel">Remover agendamento</p>
+        </li>
+
+        <li>
+          <div>
+            <strong>15:00</strong>
+            <span class="pet-name">Simba</span>/<span class="tutor-name">Juliana Rocha</span>
+          </div>
+          
+          <p class="service">Tosa Higiênica</p>
+
+          <p class="cancel">Remover agendamento</p>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="schedule-period">
+      <header>
+        <div>
+          <img src="./assets/icons/night.svg" alt="Manhã">
+          <h2>Noite</h2>
+        </div>
+        <strong>19h-21h</strong>
+      </header>
+
+      <ul id="morning-period" class="period">
+        <li>
+          <div>
+            <strong>20:00</strong>
+            <span class="pet-name">Max</span>/<span class="tutor-name">Camila Santos</span>
+          </div>
+          
+          <p class="service">Limpeza de Dentes</p>
+
+          <p class="cancel">Remover agendamento</p>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+
+
+  <footer>
+    
+    <button>Novo Agendamento</button>
   
+  </footer>
 </body>
 </html>

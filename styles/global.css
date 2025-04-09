@@ -46,4 +46,42 @@
   --lb-medium: 700 0.875rem/1.5rem var(--ff-Inter);
   --lb-small: 700 0.75rem/1rem var(--ff-Inter);
   --lb-link: 500  0.75rem/1rem var(--ff-Inter);
+
+
+  /* Spacing */
+  --px: 5rem
+}
+
+body{
+  background-color:  #14151D;
+  font-family: var(--ff-Inter);
+}
+
+
+.center{
+  margin-inline: auto
+}
+
+.logo{  
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding: 0.75rem 1.25rem;
+
+  border-bottom-right-radius: .5rem;
+  width: 9.563rem;
+  height: 3rem;
+  background-color: var(--bg-tertiary);
+}
+
+
+@media (width <= 40em){
+  :root{
+    --px: 1.25rem
+  }
+
+  .center{
+    margin-inline: 0;
+  }
 }

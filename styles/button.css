@@ -1,0 +1,41 @@
+button{
+  width: 13.6rem;
+  height: 3rem;
+
+  background-color: var(--bg-brand);
+  font: var(--lb-large);
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+
+  border: none;
+  box-shadow: 0px 0px 40px rgba(146, 130, 250, 0.3);
+
+  position: fixed;
+  top: 90%;
+  left: 73%;
+
+  &:hover{
+    cursor: pointer;
+    background-color: var(--bg-highlight);
+  }
+}
+
+
+@media (width <= 40em){
+ 
+  footer{
+    width: 100%;
+    height: 5.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-tertiary);
+
+    & button{
+      position: static;
+      top: 0;
+      left: 0;
+    }
+  }
+  
+}

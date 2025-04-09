@@ -1,0 +1,49 @@
+header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+
+  & div{
+    max-width: 30rem;
+    & h1{
+      color: var(--ct-primary);
+      font: var(--tt);
+    }
+    & p{
+      font: var(--pg-medium);
+      color: var(--ct-secondary);
+    }
+  }
+
+  & .input{
+    max-width: 15rem;
+    height: 3rem;
+
+    border: 1px solid var(--bd-primary);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    & i {
+      margin-left: 0.5rem;
+    }
+
+    & input{
+      width: 100%;
+      font: 500 1rem/150% var(--ff-Inter);
+      color: var(--ct-secondary);
+      background-color: transparent;
+      outline: none;
+      border: none;
+    }
+  }
+}
+
+::-webkit-calendar-picker-indicator{
+  cursor: pointer;
+  background: url(../assets/icons/arrow-down.svg) no-repeat center;
+  margin-right: 0.5rem;
+}

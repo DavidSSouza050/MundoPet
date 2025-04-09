@@ -1,0 +1,102 @@
+& .schedule-period{
+  max-width: 50rem;
+  width: 100%;
+  min-height: 5rem;
+  height: auto;
+
+  background-color: var(--bg-tertiary);
+  border-radius: 0.5rem;
+
+  padding-bottom: 1.25rem;
+
+  margin-bottom: 0.75rem;
+
+  & header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    
+    & div{
+      display: flex;
+      gap: 0.75rem;
+
+      & h2{
+        font: var(--lb-large);
+        color: var(--ct-primary);
+      }
+    }
+
+    & strong{
+      font: var(--lb-large);
+      color: var(--ct-secondary)
+    }
+  }
+
+  & .period{
+    list-style: none;
+    padding-inline: 1.25rem;
+
+    & li {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--bd-divisor);
+      padding: 1rem 1.75rem;
+
+      font: var(--pg-small);
+      color: var(--ct-tertiary);
+      margin-top: 0.75rem;
+
+      & div{
+
+        & strong{
+          font: var(--lb-small);
+          color: var(--ct-primary);
+          margin-right: 1rem;
+        }
+
+        & .pet-name{
+          font: var(--lb-small);
+          color: var(--ct-primary);
+          margin-right: 0.25rem;
+        }
+
+        & .tutor-name{
+          margin-left: 0.25rem;
+        }
+      } 
+
+      & .cancel:hover{
+        cursor: pointer;
+        color: var(--ct-primary);
+        text-decoration: underline;
+      }
+    }
+  }
+
+} 
+
+@media (width <= 40em){
+
+  section > header{
+    border-bottom: 1px solid var(--bd-divisor);
+  }
+
+  li{
+    flex-direction: column;
+    align-items: unset !important;
+    padding: 0.75rem !important;
+
+    & div{
+      margin-bottom: 0.25rem;
+    }
+
+    & .cancel{
+      align-self: flex-end;
+    }
+  }
+
+}
