@@ -57,9 +57,18 @@ body{
   font-family: var(--ff-Inter);
 }
 
+h1{
+  color: var(--ct-primary);
+  font: var(--tt);
+}
+
+p{
+  font: var(--pg-medium);
+  color: var(--ct-secondary);
+}
 
 .center{
-  margin-inline: auto
+  margin-inline: auto;
 }
 
 .logo{  
@@ -73,6 +82,12 @@ body{
   width: 9.563rem;
   height: 3rem;
   background-color: var(--bg-tertiary);
+
+  z-index: 9999;
+}
+
+.hidden{
+  display: none !important;
 }
 
 
@@ -84,4 +99,15 @@ body{
   .center{
     margin-inline: 0;
   }
+}
+
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex1{
+  flex: 1;
 }

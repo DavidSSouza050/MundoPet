@@ -19,9 +19,9 @@
         <h1>Sua agenda</h1>
         <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
       </div>
-      <div class="input">
+      <div class="input-wrapper">
         <i><img src="./assets/icons/calendar.svg" alt="ícone de calendário"></i>
-        <input type="date" id="date" name="date">
+        <input  type="date" id="date" name="date" class="input-date-filter">
       </div>
     </header>
 
@@ -118,13 +118,85 @@
       </ul>
     </section>
 
+    
+
   </main>
 
 
   <footer>
-    
-    <button>Novo Agendamento</button>
-  
+    <button class="new-schedule">Novo Agendamento</button>
   </footer>
+
+
+  <div class="modal-container hidden">
+
+    <div class="modal">
+      <h1>Agende um atendimento</h1>
+      <p>Preencha os dados do cliente para realizar o agendamento:</p>
+
+
+      <form >
+        
+        <div class="input-container">
+          <label for="tutorName">Nome do tutor</label>
+          <div class="input-wrapper">
+            <i><img src="./assets/icons/user.svg" alt="ícone de pessoa"></i>
+            <input type="text" id="tutorName" name="tutorName" placeholder="Helena Souza" required>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="petName">Nome do pet</label>
+          <div class="input-wrapper">
+            <i><img src="./assets/icons/foot-animals.svg" alt="ícone de pata de animal"></i>
+            <input type="text" id="petName" name="petName" placeholder="Cheddar" required>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="phoneNumber">Telefone</label>
+          <div class="input-wrapper">
+            <i><img src="./assets/icons/phone.svg" alt="ícone de Telefone"></i>
+            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="(00) 0 0000-0000" required>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="descriptionService">Descrição do serviço</label>
+          <div class="input-wrapper">
+            <textarea placeholder="Banho e tosa" id="descriptionService" name="descriptionService"></textarea>
+          </div>
+        </div> 
+
+        <div class="flex">
+
+          <div class="input-container flex1">
+            <label for="dateSchedule">Data</label>
+            <div class="input-wrapper">
+              <i><img src="./assets/icons/calendar.svg" alt="ícone de calendário"></i>
+              <input type="date" id="dateSchedule" name="dateSchedule" required>
+            </div>
+          </div>
+
+          <div class="input-container flex1">
+            <label for="timeSchedule">Hora</label>
+            <div class="input-wrapper">
+              <i><img src="./assets/icons/clock.svg" alt="ícone de relógio"></i>
+              <input type="time" id="timeSchedule" name="timeSchedule" required>
+            </div>
+          </div>
+
+        </div>
+
+
+        <button>Agendar</button>
+      </form>
+
+
+    </div>
+
+  </div>
+
+
 </body>
 </html>

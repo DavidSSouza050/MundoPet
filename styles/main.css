@@ -7,7 +7,7 @@ main {
   padding-inline: var(--px);
   padding-top: 5rem;
 
-
+  z-index: 1;
 }
 
 @media (width <= 40em){

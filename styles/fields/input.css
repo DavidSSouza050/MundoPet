@@ -1,0 +1,61 @@
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  & label{
+    font: var(--lb-medium);
+    color: var(--ct-primary);
+  }
+}
+
+.input-wrapper{
+  min-height: 3rem;
+  height: auto;
+
+  border: 1px solid var(--bd-primary);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  & i {
+    margin-left: 0.5rem;
+  }
+
+  & input, textarea{
+    width: 100%;
+    font: 500 1rem/150% var(--ff-Inter);
+    color: var(--ct-primary);
+    background-color: transparent;
+    outline: none;
+    border: none;
+
+    & ::placeholder{
+      color: var(--ct-primary);
+    }
+  }
+}
+
+textarea{
+  min-height: 5rem;
+  height: auto;
+  resize: none;
+  padding: 0.75rem;
+}
+
+input[type="text"]{
+  width: 100%;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator{
+  cursor: pointer;
+  background: url(../../assets/icons/arrow-down.svg) no-repeat center;
+  margin-right: 0.5rem;
+}
+
+.input-date-filter{
+  color: var(--ct-secondary) !important;
+}

@@ -1,23 +1,28 @@
 button{
-  width: 13.6rem;
+  max-width: 13.6rem;
   height: 3rem;
+  padding: auto;
+  padding-inline: 0.75rem;
 
   background-color: var(--bg-brand);
   font: var(--lb-large);
-  border-radius: 0.5rem;
+  border-radius: 0.5rem ;
   text-transform: uppercase;
 
   border: none;
-  box-shadow: 0px 0px 40px rgba(146, 130, 250, 0.3);
-
-  position: fixed;
-  top: 90%;
-  left: 73%;
-
+  
   &:hover{
     cursor: pointer;
     background-color: var(--bg-highlight);
   }
+}
+
+.new-schedule{
+  position: fixed;
+  top: 90%;
+  left: 80%;
+  box-shadow: 0px 0px 40px rgba(146, 130, 250, 0.3);
+
 }
 
 
@@ -31,7 +36,7 @@ button{
     align-items: center;
     background-color: var(--bg-tertiary);
 
-    & button{
+    & .new-schedule{
       position: static;
       top: 0;
       left: 0;
