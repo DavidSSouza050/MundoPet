@@ -20,7 +20,7 @@
       </div>
       <div class="input-wrapper">
         <i><img src="./src/assets/icons/calendar.svg" alt="ícone de calendário"></i>
-        <input  type="date" id="date" name="date" class="input-date-filter">
+        <input  type="date" id="date-filter" name="date-filter" class="input-date-filter">
       </div>
     </header>
 
@@ -123,65 +123,67 @@
 
 
   <footer>
-    <button class="new-schedule">Novo Agendamento</button>
+    <button id="open_modal" class="new-schedule">Novo Agendamento</button>
   </footer>
 
 
-  <div class="modal-container hidden">
+  <div id="modal_container" class="modal-container hidden">
 
-    <div class="modal">
+    <div id="modal" class="modal">
       <h1>Agende um atendimento</h1>
       <p>Preencha os dados do cliente para realizar o agendamento:</p>
 
 
-      <form >
+      <form>
         
         <div class="input-container">
-          <label for="tutorName">Nome do tutor</label>
+          <label for="tutor_name">Nome do tutor</label>
           <div class="input-wrapper">
             <i><img src="./src/assets/icons/user.svg" alt="ícone de pessoa"></i>
-            <input type="text" id="tutorName" name="tutorName" placeholder="Helena Souza" required>
+            <input type="text" id="tutor_name" name="tutor_name" placeholder="Helena Souza" required>
           </div>
         </div>
 
         <div class="input-container">
-          <label for="petName">Nome do pet</label>
+          <label for="pet_name">Nome do pet</label>
           <div class="input-wrapper">
             <i><img src="./src/assets/icons/foot-animals.svg" alt="ícone de pata de animal"></i>
-            <input type="text" id="petName" name="petName" placeholder="Cheddar" required>
+            <input type="text" id="pet_name" name="pet_name" placeholder="Cheddar" required>
           </div>
         </div>
 
         <div class="input-container">
-          <label for="phoneNumber">Telefone</label>
+          <label for="phone_number">Telefone</label>
           <div class="input-wrapper">
             <i><img src="./src/assets/icons/phone.svg" alt="ícone de Telefone"></i>
-            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="(00) 0 0000-0000" required>
+            <input type="text" id="phone_number" name="phone_number" placeholder="(00) 0 0000-0000" required>
           </div>
         </div>
 
         <div class="input-container">
-          <label for="descriptionService">Descrição do serviço</label>
+          <label for="desc_service">Descrição do serviço</label>
           <div class="input-wrapper">
-            <textarea placeholder="Banho e tosa" id="descriptionService" name="descriptionService"></textarea>
+            <textarea placeholder="Banho e tosa" id="desc_service" name="desc_service"></textarea>
           </div>
         </div> 
 
         <div class="flex">
 
           <div class="input-container flex1">
-            <label for="dateSchedule">Data</label>
+            <label for="date_schedule">Data</label>
             <div class="input-wrapper">
               <i><img src="./src/assets/icons/calendar.svg" alt="ícone de calendário"></i>
-              <input type="date" id="dateSchedule" name="dateSchedule" required>
+              <input type="date" id="date_schedule" name="date_schedule" required>
             </div>
           </div>
 
           <div class="input-container flex1">
-            <label for="timeSchedule">Hora</label>
+            <label for="time_schedule">Hora</label>
             <div class="input-wrapper">
               <i><img src="./src/assets/icons/clock.svg" alt="ícone de relógio"></i>
-              <input type="time" id="timeSchedule" name="timeSchedule" required>
+              <select  id="time_schedule" name="time_schedule" required>
+                <option value="--:--">--:--</option>
+              </select>
             </div>
           </div>
 

@@ -1,7 +1,7 @@
-@import url(global.css);
-@import url(main.css);
-@import url(header.css);
-@import url(section.css);
+@import url(./global.css);
+@import url(./main.css);
+@import url(./header.css);
+@import url(./section.css);
 @import url(./fields/button.css);
 @import url(./fields/input.css);
-@import url(modal.css);
+@import url(./modal.css);

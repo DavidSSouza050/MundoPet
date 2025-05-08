@@ -25,10 +25,14 @@
     margin-left: 0.5rem;
   }
 
-  & input, textarea{
+  & input, textarea, select{
     width: 100%;
     font: 500 1rem/150% var(--ff-Inter);
     color: var(--ct-primary);
+    /* resetando aparência das inputs */
+    appearance: none;     
+    -webkit-appearance: none; 
+    -moz-appearance: none;
     background-color: transparent;
     outline: none;
     border: none;
@@ -37,7 +41,16 @@
       color: var(--ct-primary);
     }
   }
+
+  &:hover {
+    border-color: var(--bd-brand)
+  }
 }
+option{
+  margin-left: 1rem;
+  color: #000000;
+}
+
 
 textarea{
   min-height: 5rem;
@@ -50,9 +63,15 @@ input[type="text"]{
   width: 100%;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator{
+input[type="date"]::-webkit-calendar-picker-indicator{
   cursor: pointer;
   background: url(../../assets/icons/arrow-down.svg) no-repeat center;
+  margin-right: 0.5rem;
+}
+
+select{
+  cursor: pointer;
+  background: url(../../assets/icons/arrow-down.svg) no-repeat right center;
   margin-right: 0.5rem;
 }
 
