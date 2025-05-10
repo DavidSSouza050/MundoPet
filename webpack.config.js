@@ -12,6 +12,7 @@ module.exports = {
   output: {
     filename: "main.js", 
     path: path.resolve(__dirname, "dist"),
+    crossOriginLoading: "anonymous"
   },
 
   // configurando o dev server para a api
