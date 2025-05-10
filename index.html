@@ -34,7 +34,7 @@
       </header>
 
       <ul id="morning-period" class="period">
-        <li>
+        <!-- <li>
           <div>
             <strong>09:00</strong>
             <span class="pet-name">Thor</span>/<span class="tutor-name">Fernanda Costa</span>
@@ -43,7 +43,7 @@
           <p class="service">Vacinação</p>
 
           <p class="cancel">Remover agendamento</p>
-        </li>
+        </li> -->
       </ul>
     </section>
 
@@ -56,8 +56,8 @@
         <strong>13h-18h</strong>
       </header>
 
-      <ul id="morning-period" class="period">
-        <li>
+      <ul id="afternoon-period" class="period">
+        <!-- <li>
           <div>
             <strong>13:00</strong>
             <span class="pet-name">Mel</span>/<span class="tutor-name">João Souza</span>
@@ -88,7 +88,7 @@
           <p class="service">Tosa Higiênica</p>
 
           <p class="cancel">Remover agendamento</p>
-        </li>
+        </li> -->
       </ul>
     </section>
 
@@ -102,8 +102,8 @@
         <strong>19h-21h</strong>
       </header>
 
-      <ul id="morning-period" class="period">
-        <li>
+      <ul id="night-period" class="period">
+        <!-- <li>
           <div>
             <strong>20:00</strong>
             <span class="pet-name">Max</span>/<span class="tutor-name">Camila Santos</span>
@@ -112,7 +112,7 @@
           <p class="service">Limpeza de Dentes</p>
 
           <p class="cancel">Remover agendamento</p>
-        </li>
+        </li> -->
 
       </ul>
     </section>
@@ -123,11 +123,11 @@
 
 
   <footer>
-    <button id="open_modal" class="new-schedule">Novo Agendamento</button>
+    <button id="open-modal" class="new-schedule">Novo Agendamento</button>
   </footer>
 
-
-  <div id="modal_container" class="modal-container hidden">
+  <!-- Modal para cadastro dos agendamentos -->
+  <div id="modal-container" class="modal-container hidden">
 
     <div id="modal" class="modal">
       <h1>Agende um atendimento</h1>
@@ -137,51 +137,51 @@
       <form>
         
         <div class="input-container">
-          <label for="tutor_name">Nome do tutor</label>
+          <label for="tutor-name">Nome do tutor</label>
           <div class="input-wrapper">
             <i><img src="./src/assets/icons/user.svg" alt="ícone de pessoa"></i>
-            <input type="text" id="tutor_name" name="tutor_name" placeholder="Helena Souza" required>
+            <input type="text" id="tutor-name" name="tutor-name" placeholder="Helena Souza" required>
           </div>
         </div>
 
         <div class="input-container">
-          <label for="pet_name">Nome do pet</label>
+          <label for="pet-name">Nome do pet</label>
           <div class="input-wrapper">
             <i><img src="./src/assets/icons/foot-animals.svg" alt="ícone de pata de animal"></i>
-            <input type="text" id="pet_name" name="pet_name" placeholder="Cheddar" required>
+            <input type="text" id="pet-name" name="pet-name" placeholder="Cheddar" required>
           </div>
         </div>
 
         <div class="input-container">
-          <label for="phone_number">Telefone</label>
+          <label for="phone-number">Telefone</label>
           <div class="input-wrapper">
             <i><img src="./src/assets/icons/phone.svg" alt="ícone de Telefone"></i>
-            <input type="text" id="phone_number" name="phone_number" placeholder="(00) 0 0000-0000" required>
+            <input type="text" id="phone-number" name="phone-number" placeholder="(00) 0 0000-0000" required>
           </div>
         </div>
 
         <div class="input-container">
-          <label for="desc_service">Descrição do serviço</label>
+          <label for="desc-service">Descrição do serviço</label>
           <div class="input-wrapper">
-            <textarea placeholder="Banho e tosa" id="desc_service" name="desc_service"></textarea>
+            <textarea placeholder="Banho e tosa" id="desc-service" name="desc-service"></textarea>
           </div>
         </div> 
 
         <div class="flex">
 
           <div class="input-container flex1">
-            <label for="date_schedule">Data</label>
+            <label for="date-schedule">Data</label>
             <div class="input-wrapper">
               <i><img src="./src/assets/icons/calendar.svg" alt="ícone de calendário"></i>
-              <input type="date" id="date_schedule" name="date_schedule" required>
+              <input type="date" id="date-schedule" name="date-schedule" required>
             </div>
           </div>
 
           <div class="input-container flex1">
-            <label for="time_schedule">Hora</label>
+            <label for="time-schedule">Hora</label>
             <div class="input-wrapper">
               <i><img src="./src/assets/icons/clock.svg" alt="ícone de relógio"></i>
-              <select  id="time_schedule" name="time_schedule" required>
+              <select  id="time-schedule" name="time-schedule" required>
                 <option value="--:--">--:--</option>
               </select>
             </div>
@@ -197,7 +197,7 @@
     </div>
 
   </div>
-
+  <!-- Fim da modal -->
 
 </body>
 </html>

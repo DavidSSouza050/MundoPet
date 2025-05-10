@@ -1,17 +1,23 @@
 import dayjs from "dayjs"
 import { scheduleNew } from "../../services/schedule-new.js"
+import { Today } from "../../utils/today.js"
+import { cleanForm } from "../../utils/clean-form.js"
+import { schedulesDayFilter } from "../schedules/load.js"
 
 // Elementos do formulário
 const form = document.querySelector("form")
-const nameTutor = document.getElementById("tutor_name")
-const namePet = document.getElementById("pet_name")
-const telTutor = document.getElementById("phone_number")
-const descService = document.getElementById("desc_service")
-const selectedDate = document.getElementById("date_schedule")
-const selectedHour = document.getElementById("time_schedule")
+const nameTutor = document.getElementById("tutor-name")
+const namePet = document.getElementById("pet-name")
+const telTutor = document.getElementById("phone-number")
+const descService = document.getElementById("desc-service")
+const selectedDate = document.getElementById("date-schedule")
+const selectedHour = document.getElementById("time-schedule")
+
+
+const modalContainer =  document.getElementById("modal-container")
 
 //  Data atual para formatar a input date com a data atual
-const inputToday = dayjs(new Date()).format("YYYY-MM-DD")
+const inputToday = Today()
 
 // Definindo a data atual para realizar o agendamento
 selectedDate.value = inputToday
@@ -34,10 +40,11 @@ form.onsubmit = async (event) => {
     }
 
     // Pegando apenas o horário selecionado
-    const [hour] = selectedHour.innerText.split(":")
+    const [hour] = selectedHour.value.split(":")
     
     // inserindo o horário com a data
     const when = dayjs(selectedDate.value).add(hour, "hour")
+    
 
     // Gerando o ID
     const id = new Date().getTime()
@@ -51,6 +58,17 @@ form.onsubmit = async (event) => {
       service,
       when
     })
+
+    console.log(id, 
+      tutor,
+      pet,
+      tel,
+      service,
+    when)
+  
+    modalContainer.classList.add("hidden")
+    cleanForm({nameTutor, namePet, telTutor,descService, selectedDate})
+    schedulesDayFilter()
 
   } catch (error) {
     alert("Não foi possível realizar o agendamento!")
