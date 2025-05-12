@@ -1,4 +1,4 @@
-import { schedulesDay } from "../modules/schedules/load.js"
+import { schedulesDay, schedulesDayFilter } from "../modules/schedules/load.js"
 import { Today } from "./today.js"
 
 export function cleanForm({nameTutor, namePet, telTutor,descService, selectedDate}){
@@ -8,5 +8,5 @@ export function cleanForm({nameTutor, namePet, telTutor,descService, selectedDat
   telTutor.value = ""
   descService.value = ""
   selectedDate.value = Today()
-  schedulesDay()
+  schedulesDayFilter()
 }

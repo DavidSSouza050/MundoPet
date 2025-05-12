@@ -6,7 +6,7 @@ const periodNight = document.getElementById("night-period")
 
 
 export function schedulesShow({dailySchedules}){
-  console.log(dailySchedules)
+
   try{
     // Limpando as listas de horários
     periodMorning.innerHTML = ""
@@ -28,10 +28,11 @@ export function schedulesShow({dailySchedules}){
       slash.textContent = "/"
 
       // Adicionando o id no item
-      time.setAttribute("data-id", schedule.id)
+      item.setAttribute("data-id", schedule.id)
+
       // Adicionando o horário do agendamento
       time.textContent = dayjs(schedule.when).format("HH:mm")
-      console.log(dayjs(schedule.when))
+
       // Adicionando o nome e class do nome do pet
       namePet.classList.add("pet-name")
       namePet.textContent = schedule.pet

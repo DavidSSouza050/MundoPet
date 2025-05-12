@@ -58,13 +58,6 @@ form.onsubmit = async (event) => {
       service,
       when
     })
-
-    console.log(id, 
-      tutor,
-      pet,
-      tel,
-      service,
-    when)
   
     modalContainer.classList.add("hidden")
     cleanForm({nameTutor, namePet, telTutor,descService, selectedDate})
