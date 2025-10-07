@@ -9,12 +9,17 @@ O principal objetivo do Mundo Pet é treinar o uso de JavaScript em projetos mai
 💜 Desenvolvimento
 
 O projeto foi construído com HTML, CSS e JavaScript, utilizando NPM para instalar pacotes e organizar melhor o código, garantindo maior escalabilidade e controle sobre as dependências do projeto.
-
+##
 🔗 Acesse o projeto:
-(Necessário: realizar o clone do projeto e usar o comando npm install, para baixar todas as dependecias do sistema, após a instalação, utiliza o npm start, para iniciar o sistema. Ps.: Não é necessário banco de dados)
 
+(Necessário: realizar o clone do projeto e usar o comando npm install, para baixar todas as dependecias do sistema, após a instalação, utilizae o npm start, para iniciar o sistema. 
+Ps.: Não é necessário banco de dados)
+
+##
 🛠️ Tecnologias Utilizadas
 <div style="display: inline_block"><br> <img align="center" alt="HTML5" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> <img align="center" alt="CSS3" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> <img align="center" alt="JavaScript" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"> <img align="center" alt="NPM" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg"> </div>
+
+##
 💡 Sobre o Projeto
 
 O Mundo Pet permite que o usuário agende serviços para seu pet de forma prática, aplicando conceitos como:
